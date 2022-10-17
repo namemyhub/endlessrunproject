@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium';
+    display: grid;
+    place-items: center;
+    background-color: #135e96;
+    height: 100vh;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#container #background2 {
+    height: 1000px;
+    width: 1540px;
+    position: absolute;
+    bottom: 70px;
+}
+
+#container #background2 img {
+    height: 1000px;
+    width: 1540px;
+    position: absolute;
+    animation: infinite;
+}
+
+#container #background {
+    height: 1000px;
+    width: 1540px;
+    position: absolute;
+    bottom: 10px;
+}
+
+#container #background img {
+    height: 1000px;
+    width: 1540px;
+    position: absolute;
+    animation: infinite;
+}
+
+/*@keyframes hillsAnimate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -800px;
+    }
+} */
+
+#container #road {
+    height: 70px;
+    width: 3000px;
+    position: absolute;
+    bottom: 0;
+}
+
+#container #road img {
+    height: 300px;
+    width: 3000px;
+    position: absolute;
+    left: 0;
+    animation: none;
+}
+
+@keyframes roadAnimate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -800px;
+    }
+}
+
+#container #block {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+}
+
+#container #block img {
+    height: 200px;
+    width: 200px;
+}
+
+.blockActive {
+    animation: blockAnimate 1.5s linear infinite;
+}
+
+@keyframes blockAnimate {
+    0% {
+        right: -125px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+#container #cat {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom:15px;
+    left: 20px;
+}
+
+#container #cat img {
+    height: 300px;
+    width: 300px;
+}
+
+.catActive {
+    animation: animatecat 0.5s linear infinite;
+}
+
+@keyframes animatecat {
+
+    0%,
+    100% {
+        bottom: 65px;
+    }
+
+    45%,
+    55% {
+        bottom: 160px;
+    }
+}
+
+#score {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#gameOver {
+    display: none;
+    font-size: 50px;
+    position: relative;
+    left: calc(50% - 181px);
+    top: calc(50% - 40px);
+    width: 362px;
+    height: 80px;
+    color: red;
+}
